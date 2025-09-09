@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dzmcfjZz7M0=",
+  "dgSpecHash": "bOWnT6OoXeQ=",
   "success": true,
   "projectFilePath": "/Users/py4d/Desktop/dot-net/ConcertApp/Core/ConcertApi/ConcertApi.csproj",
   "expectedPackageFiles": [
@@ -27,6 +27,7 @@
     "/Users/py4d/.nuget/packages/kubernetesclient/17.0.4/kubernetesclient.17.0.4.nupkg.sha512",
     "/Users/py4d/.nuget/packages/messagepack/2.5.192/messagepack.2.5.192.nupkg.sha512",
     "/Users/py4d/.nuget/packages/messagepack.annotations/2.5.192/messagepack.annotations.2.5.192.nupkg.sha512",
+    "/Users/py4d/.nuget/packages/microsoft.aspnetcore.jsonpatch/9.0.9/microsoft.aspnetcore.jsonpatch.9.0.9.nupkg.sha512",
     "/Users/py4d/.nuget/packages/microsoft.aspnetcore.openapi/9.0.8/microsoft.aspnetcore.openapi.9.0.8.nupkg.sha512",
     "/Users/py4d/.nuget/packages/microsoft.bcl.asyncinterfaces/7.0.0/microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "/Users/py4d/.nuget/packages/microsoft.build.framework/17.8.3/microsoft.build.framework.17.8.3.nupkg.sha512",
@@ -37,7 +38,7 @@
     "/Users/py4d/.nuget/packages/microsoft.codeanalysis.csharp.workspaces/4.8.0/microsoft.codeanalysis.csharp.workspaces.4.8.0.nupkg.sha512",
     "/Users/py4d/.nuget/packages/microsoft.codeanalysis.workspaces.common/4.8.0/microsoft.codeanalysis.workspaces.common.4.8.0.nupkg.sha512",
     "/Users/py4d/.nuget/packages/microsoft.codeanalysis.workspaces.msbuild/4.8.0/microsoft.codeanalysis.workspaces.msbuild.4.8.0.nupkg.sha512",
-    "/Users/py4d/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/Users/py4d/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/py4d/.nuget/packages/microsoft.data.sqlclient/5.1.6/microsoft.data.sqlclient.5.1.6.nupkg.sha512",
     "/Users/py4d/.nuget/packages/microsoft.data.sqlclient.sni.runtime/5.1.1/microsoft.data.sqlclient.sni.runtime.5.1.1.nupkg.sha512",
     "/Users/py4d/.nuget/packages/microsoft.entityframeworkcore/9.0.8/microsoft.entityframeworkcore.9.0.8.nupkg.sha512",

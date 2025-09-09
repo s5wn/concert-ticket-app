@@ -1,7 +1,5 @@
 volumes:
   sqlserverdata:
-  
-
 networks:
   backend:
     name: concert-api-net-backend
@@ -13,21 +11,15 @@ services:
       - ACCEPT_EULA=Y
       - MSSQL_SA_PASSWORD=Password!
       - MSSQL_PID=Evaluation
-    container_name: concert-app-db
-    hostname: sql-db
     image: mcr.microsoft.com/mssql/server:2025-latest
     volumes:
      - sqlserverdata:/var/opt/mssql
     ports:
      - "1433:1433"
-    expose:
-      - 1433
     networks:
       - backend
   api:
-    container_name: concert-app-api
     image: concert-app-api-img:1
-    hostname: concert-api
     build:
       tags:
         - concert-app-api-img:1
@@ -35,8 +27,6 @@ services:
       dockerfile: ./dockerfile
     ports:
       - "5205:5205"
-    expose:
-      - 5205
     networks:
       - backend
       - frontend

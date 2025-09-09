@@ -3,9 +3,9 @@ using Microsoft.Extensions.Options;
 
 namespace ConcertApi.Models
 {
-    public class ConcertContext : DbContext
+    public class UserContext : DbContext
     {
         public DbSet<Concert> Concerts { get; set; }
-        public ConcertContext(DbContextOptions options) : base(options) { }
+        public UserContext(DbContextOptions options) : base(options) { }
     }
 }

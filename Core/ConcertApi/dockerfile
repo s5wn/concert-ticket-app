@@ -2,12 +2,6 @@
 ARG DOTNET_VERSION=9.0
 ARG BUILD_CONFIGURATION=Release
 
-FROM ubuntu:latest
-RUN apt-get install -y \
-curl && apt-get install -y \ ping
-CMD /bin/bash
-
-
 FROM mcr.microsoft.com/dotnet/sdk:${DOTNET_VERSION} AS build
 WORKDIR /src
 COPY . .
