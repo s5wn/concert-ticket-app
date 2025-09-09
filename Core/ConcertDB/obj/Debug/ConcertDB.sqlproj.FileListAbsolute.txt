@@ -1,0 +1,11 @@
+/Users/py4d/Desktop/dot-net/ConcertApp/Core/ConcertDB/bin/Debug/ConcertDB.dacpac
+/Users/py4d/Desktop/dot-net/ConcertApp/Core/ConcertDB/bin/Debug/ConcertDB.deps.json
+/Users/py4d/Desktop/dot-net/ConcertApp/Core/ConcertDB/bin/Debug/ConcertDB.dll
+/Users/py4d/Desktop/dot-net/ConcertApp/Core/ConcertDB/bin/Debug/ConcertDB.pdb
+/Users/py4d/Desktop/dot-net/ConcertApp/Core/ConcertDB/obj/Debug/ConcertDB.GeneratedMSBuildEditorConfig.editorconfig
+/Users/py4d/Desktop/dot-net/ConcertApp/Core/ConcertDB/obj/Debug/Model.xml
+/Users/py4d/Desktop/dot-net/ConcertApp/Core/ConcertDB/obj/Debug/refactor.xml
+/Users/py4d/Desktop/dot-net/ConcertApp/Core/ConcertDB/obj/Debug/postdeploy.sql
+/Users/py4d/Desktop/dot-net/ConcertApp/Core/ConcertDB/obj/Debug/predeploy.sql
+/Users/py4d/Desktop/dot-net/ConcertApp/Core/ConcertDB/obj/Debug/ConcertDB.dll
+/Users/py4d/Desktop/dot-net/ConcertApp/Core/ConcertDB/obj/Debug/ConcertDB.pdb

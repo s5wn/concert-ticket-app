@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Qd8QHI11bgE=",
+  "success": true,
+  "projectFilePath": "/Users/py4d/Desktop/dot-net/ConcertApp/Core/ConcertDB/ConcertDB.sqlproj",
+  "expectedPackageFiles": [
+    "/Users/py4d/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.3/microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "/Users/py4d/.nuget/packages/microsoft.netframework.referenceassemblies.net20/1.0.3/microsoft.netframework.referenceassemblies.net20.1.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

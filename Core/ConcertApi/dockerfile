@@ -1,0 +1,24 @@
+
+ARG DOTNET_VERSION=9.0
+ARG BUILD_CONFIGURATION=Release
+
+FROM ubuntu:latest
+RUN apt-get install -y \
+curl
+CMD /bin/bash
+
+
+FROM mcr.microsoft.com/dotnet/sdk:${DOTNET_VERSION} AS build
+WORKDIR /src
+COPY . .
+RUN dotnet restore ConcertApi.csproj
+RUN dotnet build ConcertApi.csproj -c "$BUILD_CONFIGURATION" -o /app/build
+RUN dotnet publish ConcertApi.csproj -c "$BUILD_CONFIGURATION" -o /app/publish
+
+
+FROM mcr.microsoft.com/dotnet/aspnet:${DOTNET_VERSION} AS release
+WORKDIR /app
+ENV ASPNETCORE_HTTP_PORTS=5205
+EXPOSE 5205
+COPY --from=build /app/publish .
+ENTRYPOINT [ "dotnet", "ConcertApi.dll" ]
