@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Any;
 using Microsoft.VisualBasic;
+using Util;
 
 namespace ConcertApi.Controllers
 {
@@ -13,17 +14,16 @@ namespace ConcertApi.Controllers
     [Route("[controller]")]
     public class ConcertController : ControllerBase
     {
+        public static int GET_REQ_COUNT = 10;
         public ConcertContext _ctxImpl;
         public ConcertController(ConcertContext ctx)
         {
             _ctxImpl = ctx;
         }
         [HttpGet]
-        public async Task<ActionResult<List<Concert>>> GetConcerts()
+        public ActionResult<List<Concert>> GetConcerts(int pageIndex, int displayNumber)
         {
-            //    List<Concert> List = await _ctxImpl.Concerts.ToListAsync();
-            Console.WriteLine(_ctxImpl.Concerts.ToJsonDocument());
-            return Ok(await _ctxImpl.Concerts.ToListAsync());
+            return Ok(SqlPage.ToPages(_ctxImpl.Concerts,displayNumber,pageIndex).ToList());
         }
 
         [HttpPost]
