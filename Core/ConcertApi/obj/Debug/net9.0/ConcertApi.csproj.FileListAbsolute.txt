@@ -244,3 +244,4 @@
 /Users/py4d/Desktop/dot-net/ConcertApp/Core/ConcertApi/bin/Debug/net9.0/tr/StreamJsonRpc.resources.dll
 /Users/py4d/Desktop/dot-net/ConcertApp/Core/ConcertApi/bin/Debug/net9.0/zh-Hans/StreamJsonRpc.resources.dll
 /Users/py4d/Desktop/dot-net/ConcertApp/Core/ConcertApi/bin/Debug/net9.0/zh-Hant/StreamJsonRpc.resources.dll
+/Users/py4d/Desktop/dot-net/ConcertApp/Core/ConcertApi/obj/Debug/net9.0/ConcertApi.sourcelink.json

@@ -4,7 +4,7 @@ ARG BUILD_CONFIGURATION=Release
 
 FROM ubuntu:latest
 RUN apt-get install -y \
-curl
+curl && apt-get install -y \ ping
 CMD /bin/bash
 
 

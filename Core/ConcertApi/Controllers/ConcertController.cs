@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
 using ConcertApi.Models;
+using Json.More;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -20,8 +21,9 @@ namespace ConcertApi.Controllers
         [HttpGet]
         public async Task<ActionResult<List<Concert>>> GetConcerts()
         {
-            List<Concert> List = await _ctxImpl.Concerts.ToListAsync();
-            return Ok(List);
+            //    List<Concert> List = await _ctxImpl.Concerts.ToListAsync();
+            Console.WriteLine(_ctxImpl.Concerts.ToJsonDocument());
+            return Ok(await _ctxImpl.Concerts.ToListAsync());
         }
 
         [HttpPost]

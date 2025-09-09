@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ConcertApi.Migrations
 {
     [DbContext(typeof(ConcertContext))]
-    [Migration("20250908090506_Initial")]
-    partial class Initial
+    [Migration("20250909094931_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

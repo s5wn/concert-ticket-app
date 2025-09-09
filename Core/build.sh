@@ -1,1 +1,1 @@
-docker-compose up --build --remove-orphans --force-recreate
+docker-compose up --build --remove-orphans --force-recreate # && dotnet ef database update --connection="Data Source=localhost,1433;Initial Catalog=ConcertDB;User ID=sa;Password=Password!;Pooling=False;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Authentication=SqlPassword;Application Name=vscode-mssql;Connect Retry Count=1;Connect Retry Interval=10;Command Timeout=30"

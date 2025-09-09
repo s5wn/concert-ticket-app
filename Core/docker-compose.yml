@@ -1,3 +1,7 @@
+volumes:
+  sqlserverdata:
+  
+
 networks:
   backend:
     name: concert-api-net-backend
@@ -12,6 +16,8 @@ services:
     container_name: concert-app-db
     hostname: sql-db
     image: mcr.microsoft.com/mssql/server:2025-latest
+    volumes:
+     - sqlserverdata:/var/opt/mssql
     ports:
      - "1433:1433"
     expose:
