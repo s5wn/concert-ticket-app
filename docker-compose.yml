@@ -6,7 +6,17 @@ networks:
   frontend:
     name: concert-api-net-frontend
 services:
+  web:
+    build:
+      context: ./Web/concert-app
+      dockerfile: dockerfile
+    ports:
+      - "3000:3000"
+    networks:
+      - frontend
   database:
+   # build:
+  #    context: ./Core/ConcertDB
     environment:
       - ACCEPT_EULA=Y
       - MSSQL_SA_PASSWORD=Password!
@@ -23,8 +33,8 @@ services:
     build:
       tags:
         - concert-app-api-img:1
-      context: ./ConcertApi
-      dockerfile: ./dockerfile
+      context: ./Core/ConcertApi/
+      dockerfile: dockerfile
     ports:
       - "5205:5205"
     networks:
